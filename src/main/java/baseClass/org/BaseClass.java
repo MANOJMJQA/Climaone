@@ -1,16 +1,24 @@
 package baseClass.org;
 
+import java.awt.AWTException;
+import java.awt.Desktop.Action;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -100,11 +108,37 @@ public class BaseClass {
 		return text;
 
 	}
-	
-	public String checkText(By element,int value) {
+
+	public String checkText(By element, int value) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
 		String until = wait.until(ExpectedConditions.visibilityOfElementLocated(element)).getText();
-        return until;		
+		return until;
 
 	}
+
+	public void attachmentFile(String location) throws AWTException {
+		StringSelection selection = new StringSelection(location);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+	}
+
+	public void scrollDown() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+	}
+
+	public void mouseActionClick(By element, int value) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
+		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element2).click().perform();
+
+	}
+
 }

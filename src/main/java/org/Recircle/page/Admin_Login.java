@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import baseClass.org.BaseClass;
 
 public class Admin_Login extends BaseClass {
@@ -12,7 +13,7 @@ public class Admin_Login extends BaseClass {
 
 	public Admin_Login(WebDriver driver) throws IOException {
 		this.driver = driver;
-	
+
 	}
 
 //Login Locator
@@ -22,13 +23,14 @@ public class Admin_Login extends BaseClass {
 	By dashboard = By.xpath("//h2[text()='Dashboard']");
 
 	// Login admin pannel
-	public void Login() throws IOException {
+	public String Login() throws IOException {
 
 		this.url(getValidationfile("AdminURL"));
 		this.inputText(UserName, getValidationfile("UserName"));
 		this.inputText(PassWord, getValidationfile("password"));
 		this.buttonClick(Login);
-		
+		String checkText = this.checkText(dashboard, 10);
+		return checkText;
 
 	}
 

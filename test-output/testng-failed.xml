@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.recircle.test.CollectionPartner">
+      <class name="org.recircle.test.CP_Registration">
         <methods>
+          <include name="CP_PrimaryUser_form"/>
           <include name="afterlaunch"/>
-          <include name="Login"/>
           <include name="beforelaunch"/>
         </methods>
-      </class> <!-- org.recircle.test.CollectionPartner -->
+      </class> <!-- org.recircle.test.CP_Registration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
