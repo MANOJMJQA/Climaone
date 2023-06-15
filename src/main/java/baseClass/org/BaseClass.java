@@ -1,6 +1,7 @@
 package baseClass.org;
 
 import java.awt.AWTException;
+import java.awt.Desktop.Action;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
@@ -127,13 +128,19 @@ public class BaseClass {
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
+	}
+
+	public void scrollDown(By element, int value) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
+		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element2).release().perform();
 
 	}
 
 	public void dropdown(int value, By WebElement) {
 		wait = new WebDriverWait(driver, Duration.ofMinutes(value));
 		org.openqa.selenium.WebElement until = wait.until(ExpectedConditions.visibilityOfElementLocated(WebElement));
-
 	}
 
 	public void mouseActionClick(By element, int value) {
@@ -149,7 +156,6 @@ public class BaseClass {
 		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,400)", element2);
-
 	}
 
 }

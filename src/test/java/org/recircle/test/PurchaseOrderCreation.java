@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import baseClass.org.BaseClass;
 
 public class PurchaseOrderCreation extends BaseClass {
-	
+
 	WebDriver driver;
 
 	@BeforeClass
@@ -36,27 +36,28 @@ public class PurchaseOrderCreation extends BaseClass {
 		String dashboardCheck = login.dashboardCheck();
 		System.out.println(dashboardCheck);
 	}
-    @Test(priority=2)
+
+	@Test(priority = 2)
 	public void AddPo() {
 		po_creation po = PageFactory.initElements(driver, po_creation.class);
 		String addPo = po.addPo();
 		System.out.println(addPo);
 
 	}
-    @Test(priority=3)
+
+	@Test(priority = 3)
 	public void ClickPo() {
 		po_creation po = PageFactory.initElements(driver, po_creation.class);
 		String clickPO = po.ClickPO();
 		System.out.println(clickPO);
 
 	}
-    @Test(priority=4)
-    public void resgistration() throws AWTException {
-	    po_creation regis = PageFactory.initElements(driver, po_creation.class);
-	    regis.poRegistration();
-    	
+
+	@Test(priority = 4)
+	public void resgistration() throws AWTException {
+		po_creation regis = PageFactory.initElements(driver, po_creation.class);
+		regis.poRegistration();
 
 	}
-    
-	
+
 }

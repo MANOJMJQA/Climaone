@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
 import baseClass.org.BaseClass;
 
 public class Admin_Login extends BaseClass {
@@ -20,8 +21,18 @@ public class Admin_Login extends BaseClass {
 	By PassWord = By.xpath("//input[@id='password']");
 	By Login = By.xpath("//button[contains(text(),'Log in')]");
 	By dashboard = By.xpath("//h2[text()='Dashboard']");
-	
+
 	// Login admin pannel
+	public String Login() throws IOException {
+
+		this.url(getValidationfile("AdminURL"));
+		this.inputText(UserName, getValidationfile("UserName"));
+		this.inputText(PassWord, getValidationfile("password"));
+		this.buttonClick(Login);
+		String checkText = this.checkText(dashboard, 50);
+		return checkText;
+	}
+
 	public void Login(String value) throws IOException {
 		if (value.equals("admin")) {
 			this.url(getValidationfile("AdminURL"));
@@ -40,7 +51,6 @@ public class Admin_Login extends BaseClass {
 
 		String text = this.checkText(dashboard, 10);
 		return text;
-		
 
 	}
 
