@@ -78,14 +78,15 @@ public class po_creation extends BaseClass {
 //        this.inputText(Billto, "cxxxxxx");
 //        this.inputText(ShipTo, "yyyyyy");
 //        this.inputText(SendInvoiceTo, "nungambakkam");
+		this.scrollDown1();
 		this.inputText(PaymentTerms, "test");
 		this.inputText(ShippingTerms, "test");
-		this.scrollDown1();
+		Thread.sleep(2000);
 		this.mouseActionClick(ListDocument, 10);
-		if (this.invisibleConditionCheck(ListCheckbox, 10)) {
+		if (!this.invisibleConditionCheck(ListCheckbox, 10)) {
 			do {
 				this.mouseActionClick(ListDocument, 10);
-			} while (this.invisibleConditionCheck(ListCheckbox, 10));
+			} while (!this.invisibleConditionCheck(ListCheckbox, 10));
 		}
 //        this.buttonClick(ListDocument);
 //        this.buttonClick(ListDocument);

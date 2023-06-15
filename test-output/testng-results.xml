@@ -2,61 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2023-06-15T19:19:20 IST" name="Default suite" finished-at="2023-06-15T19:20:06 IST" duration-ms="45534">
+  <suite started-at="2023-06-15T19:37:47 IST" name="Default suite" finished-at="2023-06-15T19:38:10 IST" duration-ms="22302">
     <groups>
     </groups>
-    <test started-at="2023-06-15T19:19:20 IST" name="Default test" finished-at="2023-06-15T19:20:06 IST" duration-ms="45534">
+    <test started-at="2023-06-15T19:37:47 IST" name="Default test" finished-at="2023-06-15T19:38:10 IST" duration-ms="22302">
       <class name="org.recircle.test.PurchaseOrderCreation">
-        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-15T19:19:20 IST" name="beforelaunch" finished-at="2023-06-15T19:19:25 IST" duration-ms="4514" status="PASS">
+        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:37:47 IST" name="beforelaunch" finished-at="2023-06-15T19:37:50 IST" duration-ms="2452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforelaunch -->
-        <test-method signature="Login()[pri:1, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-15T19:19:25 IST" name="Login" finished-at="2023-06-15T19:19:42 IST" duration-ms="16938" status="PASS">
+        <test-method signature="Login()[pri:1, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:37:50 IST" name="Login" finished-at="2023-06-15T19:38:00 IST" duration-ms="9706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="AddPo()[pri:2, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-15T19:19:42 IST" name="AddPo" finished-at="2023-06-15T19:19:43 IST" duration-ms="1271" status="PASS">
+        <test-method signature="AddPo()[pri:2, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:00 IST" name="AddPo" finished-at="2023-06-15T19:38:01 IST" duration-ms="1014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddPo -->
-        <test-method signature="ClickPo()[pri:3, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-15T19:19:43 IST" name="ClickPo" finished-at="2023-06-15T19:19:50 IST" duration-ms="7251" status="PASS">
+        <test-method signature="ClickPo()[pri:3, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:01 IST" name="ClickPo" finished-at="2023-06-15T19:38:03 IST" duration-ms="2716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickPo -->
-        <test-method signature="resgistration()[pri:4, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-15T19:19:50 IST" name="resgistration" finished-at="2023-06-15T19:20:06 IST" duration-ms="15494" status="PASS">
+        <test-method signature="resgistration()[pri:4, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:03 IST" name="resgistration" finished-at="2023-06-15T19:38:09 IST" duration-ms="6097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resgistration -->
-        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-15T19:20:06 IST" name="afterlaunch" finished-at="2023-06-15T19:20:06 IST" duration-ms="0" status="PASS">
-=======
-  <suite started-at="2023-06-15T19:20:20 IST" name="Default suite" finished-at="2023-06-15T19:20:51 IST" duration-ms="30625">
-    <groups>
-    </groups>
-    <test started-at="2023-06-15T19:20:20 IST" name="Default test" finished-at="2023-06-15T19:20:51 IST" duration-ms="30625">
-      <class name="org.recircle.test.PurchaseOrderCreation">
-        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:20:20 IST" name="beforelaunch" finished-at="2023-06-15T19:20:24 IST" duration-ms="3939" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforelaunch -->
-        <test-method signature="Login()[pri:1, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:20:24 IST" name="Login" finished-at="2023-06-15T19:20:39 IST" duration-ms="15243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="AddPo()[pri:2, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:20:39 IST" name="AddPo" finished-at="2023-06-15T19:20:40 IST" duration-ms="1053" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddPo -->
-        <test-method signature="ClickPo()[pri:3, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:20:40 IST" name="ClickPo" finished-at="2023-06-15T19:20:43 IST" duration-ms="3158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickPo -->
-        <test-method signature="resgistration()[pri:4, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:20:43 IST" name="resgistration" finished-at="2023-06-15T19:20:51 IST" duration-ms="7185" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resgistration -->
-        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:20:51 IST" name="afterlaunch" finished-at="2023-06-15T19:20:51 IST" duration-ms="0" status="PASS">
->>>>>>> 5a26fccccaa32fd05ce1c748227c949ad5170723
+        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:09 IST" name="afterlaunch" finished-at="2023-06-15T19:38:10 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlaunch -->
