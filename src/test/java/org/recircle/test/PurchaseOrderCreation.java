@@ -54,7 +54,7 @@ public class PurchaseOrderCreation extends BaseClass {
 	}
 
 	@Test(priority = 4)
-	public void resgistration() throws AWTException {
+	public void resgistration() throws AWTException, InterruptedException {
 		po_creation regis = PageFactory.initElements(driver, po_creation.class);
 		regis.poRegistration();
 
