@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-14T20:21:53 IST" name="Default suite" finished-at="2023-06-14T20:22:18 IST" duration-ms="24867">
+  <suite started-at="2023-06-15T13:45:34 IST" name="Default suite" finished-at="2023-06-15T13:45:52 IST" duration-ms="18047">
     <groups>
     </groups>
-    <test started-at="2023-06-14T20:21:53 IST" name="Default test" finished-at="2023-06-14T20:22:18 IST" duration-ms="24867">
+    <test started-at="2023-06-15T13:45:34 IST" name="Default test" finished-at="2023-06-15T13:45:52 IST" duration-ms="18047">
       <class name="org.recircle.test.CP_Registration">
-        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-14T20:21:53 IST" name="beforelaunch" finished-at="2023-06-14T20:21:55 IST" duration-ms="2339" status="PASS">
+        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-15T13:45:34 IST" name="beforelaunch" finished-at="2023-06-15T13:45:37 IST" duration-ms="3308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforelaunch -->
-        <test-method signature="Login()[pri:1, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-14T20:21:55 IST" name="Login" finished-at="2023-06-14T20:22:11 IST" duration-ms="16200" status="PASS">
+        <test-method signature="Login()[pri:1, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-15T13:45:37 IST" name="Login" finished-at="2023-06-15T13:45:47 IST" duration-ms="10003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="cp_modulepage()[pri:2, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-14T20:22:11 IST" name="cp_modulepage" finished-at="2023-06-14T20:22:13 IST" duration-ms="1454" status="PASS">
+        <test-method signature="cp_modulepage()[pri:2, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-15T13:45:47 IST" name="cp_modulepage" finished-at="2023-06-15T13:45:48 IST" duration-ms="1106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cp_modulepage -->
-        <test-method signature="Add_CP_form()[pri:3, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-14T20:22:13 IST" name="Add_CP_form" finished-at="2023-06-14T20:22:17 IST" duration-ms="3863" status="PASS">
+        <test-method signature="Add_CP_form()[pri:3, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-15T13:45:48 IST" name="Add_CP_form" finished-at="2023-06-15T13:45:51 IST" duration-ms="2746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_CP_form -->
-        <test-method signature="CP_PrimaryUser_form()[pri:4, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-14T20:22:17 IST" name="CP_PrimaryUser_form" finished-at="2023-06-14T20:22:18 IST" duration-ms="944" status="FAIL">
+        <test-method signature="CP_PrimaryUser_form()[pri:4, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-15T13:45:51 IST" name="CP_PrimaryUser_form" finished-at="2023-06-15T13:45:52 IST" duration-ms="824" status="FAIL">
           <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
             <message>
               <![CDATA[move target out of bounds
@@ -31,9 +31,9 @@
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5cfecf7277d06b44996870190f278e6, actions {actions=[org.openqa.selenium.interactions.Sequence@43c87306]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62343/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5cfecf7277d06b44996870190f278e6]]>
+Command: [b9ec8617fd53e089de2252c3c8fd5df0, actions {actions=[org.openqa.selenium.interactions.Sequence@7668892a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61020/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9ec8617fd53e089de2252c3c8fd5df0]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
@@ -41,9 +41,9 @@ Session ID: b5cfecf7277d06b44996870190f278e6]]>
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5cfecf7277d06b44996870190f278e6, actions {actions=[org.openqa.selenium.interactions.Sequence@43c87306]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62343/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b5cfecf7277d06b44996870190f278e6
+Command: [b9ec8617fd53e089de2252c3c8fd5df0, actions {actions=[org.openqa.selenium.interactions.Sequence@7668892a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61020}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61020/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b9ec8617fd53e089de2252c3c8fd5df0
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -59,9 +59,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
 at org.openqa.selenium.interactions.Actions.perform(Actions.java:554)
-at baseClass.org.BaseClass.mouseActionClick(BaseClass.java:140)
-at org.Recircle.page.cp_registration.primary_Userdetails_form(cp_registration.java:75)
-at org.recircle.test.CP_Registration.CP_PrimaryUser_form(CP_Registration.java:57)
+at baseClass.org.BaseClass.scrollDown(BaseClass.java:135)
+at org.Recircle.page.cp_registration.primary_Userdetails_form(cp_registration.java:69)
+at org.recircle.test.CP_Registration.CP_PrimaryUser_form(CP_Registration.java:56)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,7 +96,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CP_PrimaryUser_form -->
-        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-14T20:22:18 IST" name="afterlaunch" finished-at="2023-06-14T20:22:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.CP_Registration@18271936]" started-at="2023-06-15T13:45:52 IST" name="afterlaunch" finished-at="2023-06-15T13:45:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlaunch -->

@@ -41,6 +41,7 @@ public class cp_registration extends BaseClass {
 	By Aadhar_No = By.id("aadhaar_number");
 	By Designation = By.id("designation");
 	By Next_btn = By.id("primaryuser_details_next");
+	By IllustrationImage = By.xpath("//*[@id='for_form']//div//img");
 	By Org_details_label = By.xpath("//h4[text()='Organisation Details']");
 
 	public String modulepage() {
@@ -65,12 +66,12 @@ public class cp_registration extends BaseClass {
 		this.inputText(Contact_No, "8888822222");
 		this.inputText(Alternate_Contact_No, "8374738738");
 		this.inputText(Email, "berlin@yahoo.com");
-		this.scrollDown();
-
+		this.scrollDown(Designation, 10);
 		this.inputText(Aadhar_No, "747473838838");
 		this.inputText(Designation, "CEO");
 		this.mouseActionClick(Aadhar_frontview_image, 4);
-		Thread.sleep(5000);
+		this.mouseActionClick(Aadhar_frontview_image, 4);
+		Thread.sleep(2500);
 		this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\tree-736885__480.jpg");
 		if (this.conditionCheck(Aadhar_frontview_image_visible, 3)) {
 
@@ -80,7 +81,9 @@ public class cp_registration extends BaseClass {
 				this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\tree-736885__480.jpg");
 			} while (!this.conditionCheck(Aadhar_frontview_image_visible, 3));
 		}
+		Thread.sleep(1500);
 		this.mouseActionClick(Aadhar_backview_image, 5);
+		Thread.sleep(1500);
 		this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\tree-736885__480.jpg");
 		if (this.conditionCheck(Aadhar_backview_image_visible, 3)) {
 
@@ -90,7 +93,8 @@ public class cp_registration extends BaseClass {
 				this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\tree-736885__480.jpg");
 			} while (!this.conditionCheck(Aadhar_backview_image_visible, 3));
 		}
-		// this.mouseActionClick(Next_btn,5);
+		this.scrollDown(IllustrationImage, 10);
+		this.mouseActionClick(Next_btn, 5);
 		String checkText = this.checkText(Org_details_label, 10);
 		return checkText;
 

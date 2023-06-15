@@ -128,9 +128,11 @@ public class BaseClass {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 
-	public void scrollDown() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+	public void scrollDown(By element, int value) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
+		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element2).release().perform();
 	}
 
 	public void mouseActionClick(By element, int value) {
@@ -138,7 +140,6 @@ public class BaseClass {
 		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element2).click().perform();
-
 	}
 
 }

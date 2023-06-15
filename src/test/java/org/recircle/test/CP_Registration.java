@@ -41,7 +41,6 @@ public class CP_Registration extends BaseClass {
 		cp_registration CP_module = PageFactory.initElements(driver, cp_registration.class);
 		String modulepage = CP_module.modulepage();
 		System.out.println(modulepage);
-
 	}
 
 	@Test(priority = 3)

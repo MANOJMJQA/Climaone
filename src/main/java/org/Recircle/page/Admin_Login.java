@@ -29,7 +29,7 @@ public class Admin_Login extends BaseClass {
 		this.inputText(UserName, getValidationfile("UserName"));
 		this.inputText(PassWord, getValidationfile("password"));
 		this.buttonClick(Login);
-		String checkText = this.checkText(dashboard, 10);
+		String checkText = this.checkText(dashboard, 50);
 		return checkText;
 
 	}
