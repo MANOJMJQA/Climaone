@@ -1,16 +1,25 @@
 package baseClass.org;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.bidi.log.JavascriptLogEntry;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -59,7 +68,7 @@ public class BaseClass {
 
 	public void inputText(By element, String value) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(element)).sendKeys(value);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(element)).sendKeys(value, Keys.TAB);
 
 	}
 
@@ -100,11 +109,47 @@ public class BaseClass {
 		return text;
 
 	}
-	
-	public String checkText(By element,int value) {
+
+	public String checkText(By element, int value) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
 		String until = wait.until(ExpectedConditions.visibilityOfElementLocated(element)).getText();
-        return until;		
+		return until;
 
 	}
+
+	public void attachmentFile(String location) throws AWTException {
+		StringSelection selection = new StringSelection(location);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+
+	}
+
+	public void dropdown(int value, By WebElement) {
+		wait = new WebDriverWait(driver, Duration.ofMinutes(value));
+		org.openqa.selenium.WebElement until = wait.until(ExpectedConditions.visibilityOfElementLocated(WebElement));
+
+	}
+
+	public void mouseActionClick(By element, int value) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
+		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+		Actions action = new Actions(driver);
+		action.moveToElement(element2).click().perform();
+
+	}
+
+	public void Scrolldown(By element) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)", element2);
+
+	}
+
 }
