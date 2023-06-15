@@ -43,6 +43,9 @@ public class po_creation extends BaseClass {
 	By PaymentTerms = By.id("payment_terms");
 	By ShippingTerms = By.id("shipping_terms");
 	By ListDocument = By.xpath("//*[@id='667a1a85-b595-44f8-9722-84205bd417ba']//parent::div[1]//child::label");
+	By ListCheckbox = By.xpath(
+			"//*[@id='667a1a85-b595-44f8-9722-84205bd417ba' and contains(@class,'border-danger')]//parent::div[1]//child::label");
+
 	By UploadPO = By.xpath("//*[@id='upload']//parent::div[@id='upload_button_div_1']//span");
 	By UploadPOView = By.xpath("//*[@id='original_po_pdf_filename']");
 
@@ -60,7 +63,7 @@ public class po_creation extends BaseClass {
 
 	}
 
-	public void poRegistration() throws AWTException {
+	public void poRegistration() throws AWTException, InterruptedException {
 
 		this.buttonClick(CompanyName);
 		this.buttonClick(CompanyNameList);
@@ -77,17 +80,28 @@ public class po_creation extends BaseClass {
 //        this.inputText(SendInvoiceTo, "nungambakkam");
 		this.inputText(PaymentTerms, "test");
 		this.inputText(ShippingTerms, "test");
-		for (int i = 0; i < 10; i++) {
-			Robot robot = new Robot();
-			robot.keyPress(KeyEvent.VK_DOWN);
-			robot.keyRelease(KeyEvent.VK_DOWN);
+		this.scrollUp();
+		this.scrollDown();
+		this.mouseActionClick(ListDocument, 10);
+		if (this.invisibleConditionCheck(ListCheckbox, 10)) {
+			do {
+				this.mouseActionClick(ListDocument, 10);
+			} while (this.invisibleConditionCheck(ListCheckbox, 10));
 		}
-		this.buttonClick(ListDocument);
 //        this.buttonClick(ListDocument);
 //        this.buttonClick(ListDocument);
-		this.buttonClick(UploadPO);
-		Thread.sleep(2500);
-//		this.attachmentFile(System.getProperty("user.dir")+"")
+		
+		this.mouseActionClick(UploadPO, 20);
+		Thread.sleep(1500);
+		this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\dsc00531 (1).jpg");
+		if (!this.conditionCheck(UploadPOView, 20)) {
+
+			do {
+				this.mouseActionClick(UploadPO,10);
+				Thread.sleep(2500);
+				this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\dsc00531 (1).jpg");
+			} while (!this.conditionCheck(UploadPOView, 20));
+		}
 
 	}
 

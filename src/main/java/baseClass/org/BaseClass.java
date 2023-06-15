@@ -104,6 +104,18 @@ public class BaseClass {
 
 	}
 
+	public Boolean invisibleConditionCheck(By element, int value) {
+		Boolean check = false;
+		try {
+			wait = new WebDriverWait(driver, Duration.ofSeconds(value));
+			check = wait.until(ExpectedConditions.invisibilityOfElementLocated(element));
+			return check;
+		} catch (Exception e) {
+			return check;
+		}
+
+	}
+
 	public String checktext(int value, WebElement element) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
 		String text = wait.until(ExpectedConditions.visibilityOf(element)).getText();
@@ -151,11 +163,14 @@ public class BaseClass {
 
 	}
 
-	public void Scrolldown(By element) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+	public void scrollDown() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,400)", element2);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 	}
 
+	public void scrollUp() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
+
+	}
 }
