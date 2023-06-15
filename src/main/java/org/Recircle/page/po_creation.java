@@ -78,26 +78,25 @@ public class po_creation extends BaseClass {
 //        this.inputText(Billto, "cxxxxxx");
 //        this.inputText(ShipTo, "yyyyyy");
 //        this.inputText(SendInvoiceTo, "nungambakkam");
+		this.scrollDown1();
 		this.inputText(PaymentTerms, "test");
 		this.inputText(ShippingTerms, "test");
-		this.scrollUp();
-		this.scrollDown();
-		this.mouseActionClick(ListDocument, 10);
-		if (this.invisibleConditionCheck(ListCheckbox, 10)) {
+		Thread.sleep(3000);
+		this.mouseActionClick(ListDocument, 5);
+		if (!this.invisibleConditionCheck(ListCheckbox, 5)) {
 			do {
-				this.mouseActionClick(ListDocument, 10);
-			} while (this.invisibleConditionCheck(ListCheckbox, 10));
+				this.mouseActionClick(ListDocument, 5);
+			} while (!this.invisibleConditionCheck(ListCheckbox, 5));
 		}
 //        this.buttonClick(ListDocument);
 //        this.buttonClick(ListDocument);
-		
 		this.mouseActionClick(UploadPO, 20);
 		Thread.sleep(1500);
 		this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\dsc00531 (1).jpg");
 		if (!this.conditionCheck(UploadPOView, 20)) {
 
 			do {
-				this.mouseActionClick(UploadPO,10);
+				this.mouseActionClick(UploadPO, 10);
 				Thread.sleep(2500);
 				this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\dsc00531 (1).jpg");
 			} while (!this.conditionCheck(UploadPOView, 20));

@@ -163,9 +163,12 @@ public class BaseClass {
 
 	}
 
-	public void scrollDown() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+	public void scrollDown1() throws AWTException {
+		for (int i = 0; i < 5; i++) {
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_DOWN);
+			robot.keyRelease(KeyEvent.VK_DOWN);
+		}
 	}
 
 	public void scrollUp() {
