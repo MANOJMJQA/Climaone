@@ -35,6 +35,7 @@ public class CP_Registration extends BaseClass {
 		System.out.println(login2);
 
 	}
+	
 
 	@Test(priority = 2)
 	private void cp_modulepage() {
