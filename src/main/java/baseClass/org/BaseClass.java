@@ -13,8 +13,10 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.bidi.log.JavascriptLogEntry;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -67,7 +69,7 @@ public class BaseClass {
 
 	public void inputText(By element, String value) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(element)).sendKeys(value);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(element)).sendKeys(value, Keys.TAB);
 
 	}
 
@@ -133,13 +135,27 @@ public class BaseClass {
 		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 		Actions actions = new Actions(driver);
 		actions.moveToElement(element2).release().perform();
+
+	}
+
+	public void dropdown(int value, By WebElement) {
+		wait = new WebDriverWait(driver, Duration.ofMinutes(value));
+		org.openqa.selenium.WebElement until = wait.until(ExpectedConditions.visibilityOfElementLocated(WebElement));
 	}
 
 	public void mouseActionClick(By element, int value) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(value));
 		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
-		Actions actions = new Actions(driver);
-		actions.moveToElement(element2).click().perform();
+		Actions action = new Actions(driver);
+		action.moveToElement(element2).click().perform();
+
+	}
+
+	public void Scrolldown(By element) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement element2 = wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)", element2);
 	}
 
 }

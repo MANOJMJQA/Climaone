@@ -31,6 +31,26 @@ public class Admin_Login extends BaseClass {
 		this.buttonClick(Login);
 		String checkText = this.checkText(dashboard, 50);
 		return checkText;
+	}
+
+	public void Login(String value) throws IOException {
+		if (value.equals("admin")) {
+			this.url(getValidationfile("AdminURL"));
+			this.inputText(UserName, getValidationfile("UserName"));
+			this.inputText(PassWord, getValidationfile("password"));
+			this.buttonClick(Login);
+		}
+
+		else if (value.equals("CP")) {
+
+		}
+
+	}
+
+	public String dashboardCheck() {
+
+		String text = this.checkText(dashboard, 10);
+		return text;
 
 	}
 
