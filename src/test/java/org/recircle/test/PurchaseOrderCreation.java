@@ -25,7 +25,7 @@ public class PurchaseOrderCreation extends BaseClass {
 
 	@AfterClass
 	public void afterlaunch() {
-//		quit();
+		quit();
 
 	}
 
