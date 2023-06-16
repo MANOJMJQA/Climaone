@@ -96,7 +96,7 @@ public class cp_registration extends BaseClass {
 		this.inputText(Contact_No, "8888822222");
 		this.inputText(Alternate_Contact_No, "8374738738");
 		this.inputText(Email, "berlin@yahoo.com");
-		this.scrollDown();
+		this.scrollDown1(20);
 		this.inputText(Designation, "CEO");
 		this.inputText(Aadhar_No, "747473838838");
 		this.mouseActionClick(Aadhar_frontview_image, 4);
@@ -124,7 +124,7 @@ public class cp_registration extends BaseClass {
 				this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\tree-736885__480.jpg");
 			} while (!this.conditionCheck(Aadhar_backview_image_visible, 3));
 		}
-		this.scrollDown();
+		this.scrollDown1(20);
 		this.mouseActionClick(Next_btn, 5);
 		if (!this.conditionCheck(Org_details_label, 5)) {
 			do {
