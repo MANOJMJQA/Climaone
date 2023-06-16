@@ -22,6 +22,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -150,9 +151,11 @@ public class BaseClass {
 
 	}
 
-	public void dropdown(int value, By WebElement) {
+	public void dropdown(int value, By WebElement, int num) {
 		wait = new WebDriverWait(driver, Duration.ofMinutes(value));
 		org.openqa.selenium.WebElement until = wait.until(ExpectedConditions.visibilityOfElementLocated(WebElement));
+		Select select = new Select(until);
+		select.selectByIndex(num);
 	}
 
 	public void mouseActionClick(By element, int value) {
@@ -173,4 +176,5 @@ public class BaseClass {
 		js.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
 
 	}
+	
 }

@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-15T15:56:45 IST" name="Default suite" finished-at="2023-06-15T15:57:14 IST" duration-ms="28293">
+  <suite started-at="2023-06-16T17:08:49 IST" name="Default suite" finished-at="2023-06-16T17:09:27 IST" duration-ms="38246">
     <groups>
     </groups>
-    <test started-at="2023-06-15T15:56:45 IST" name="Default test" finished-at="2023-06-15T15:57:14 IST" duration-ms="28293">
-      <class name="org.recircle.test.PurchaseOrderCreation">
-        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@5e2c3d18]" started-at="2023-06-15T15:56:45 IST" name="beforelaunch" finished-at="2023-06-15T15:56:48 IST" duration-ms="2411" status="PASS">
+    <test started-at="2023-06-16T17:08:49 IST" name="Default test" finished-at="2023-06-16T17:09:27 IST" duration-ms="38246">
+      <class name="org.recircle.test.CP_Registration">
+        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.CP_Registration@2cb4893b]" started-at="2023-06-16T17:08:49 IST" name="beforelaunch" finished-at="2023-06-16T17:08:51 IST" duration-ms="2469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforelaunch -->
-        <test-method signature="Login()[pri:1, instance:org.recircle.test.PurchaseOrderCreation@5e2c3d18]" started-at="2023-06-15T15:56:48 IST" name="Login" finished-at="2023-06-15T15:57:02 IST" duration-ms="14504" status="PASS">
+        <test-method signature="Login()[pri:1, instance:org.recircle.test.CP_Registration@2cb4893b]" started-at="2023-06-16T17:08:51 IST" name="Login" finished-at="2023-06-16T17:09:09 IST" duration-ms="17451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="AddPo()[pri:2, instance:org.recircle.test.PurchaseOrderCreation@5e2c3d18]" started-at="2023-06-15T15:57:02 IST" name="AddPo" finished-at="2023-06-15T15:57:04 IST" duration-ms="1662" status="PASS">
+        <test-method signature="cp_modulepage()[pri:2, instance:org.recircle.test.CP_Registration@2cb4893b]" started-at="2023-06-16T17:09:09 IST" name="cp_modulepage" finished-at="2023-06-16T17:09:10 IST" duration-ms="1126" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddPo -->
-        <test-method signature="ClickPo()[pri:3, instance:org.recircle.test.PurchaseOrderCreation@5e2c3d18]" started-at="2023-06-15T15:57:04 IST" name="ClickPo" finished-at="2023-06-15T15:57:12 IST" duration-ms="7647" status="PASS">
+        </test-method> <!-- cp_modulepage -->
+        <test-method signature="Add_CP_form()[pri:3, instance:org.recircle.test.CP_Registration@2cb4893b]" started-at="2023-06-16T17:09:10 IST" name="Add_CP_form" finished-at="2023-06-16T17:09:16 IST" duration-ms="6101" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickPo -->
-        <test-method signature="resgistration()[pri:4, instance:org.recircle.test.PurchaseOrderCreation@5e2c3d18]" started-at="2023-06-15T15:57:12 IST" name="resgistration" finished-at="2023-06-15T15:57:14 IST" duration-ms="2004" status="FAIL">
+        </test-method> <!-- Add_CP_form -->
+        <test-method signature="CP_PrimaryUser_form()[pri:4, instance:org.recircle.test.CP_Registration@2cb4893b]" started-at="2023-06-16T17:09:16 IST" name="CP_PrimaryUser_form" finished-at="2023-06-16T17:09:16 IST" duration-ms="675" status="FAIL">
           <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
             <message>
               <![CDATA[move target out of bounds
-  (Session info: chrome=114.0.5735.110)
+  (Session info: chrome=113.0.5672.129)
 Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8cf6afad5056ed398f810381b29357a7, actions {actions=[org.openqa.selenium.interactions.Sequence@11f9535b]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\manoj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60394}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60394/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8cf6afad5056ed398f810381b29357a7]]>
+Command: [1d673d75cc98cb649fe97f99acf334fe, actions {actions=[org.openqa.selenium.interactions.Sequence@380e1909]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58401/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d673d75cc98cb649fe97f99acf334fe]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
-  (Session info: chrome=114.0.5735.110)
+  (Session info: chrome=113.0.5672.129)
 Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8cf6afad5056ed398f810381b29357a7, actions {actions=[org.openqa.selenium.interactions.Sequence@11f9535b]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\manoj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60394}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60394/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8cf6afad5056ed398f810381b29357a7
+Command: [1d673d75cc98cb649fe97f99acf334fe, actions {actions=[org.openqa.selenium.interactions.Sequence@380e1909]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58401/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d673d75cc98cb649fe97f99acf334fe
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -59,9 +59,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
 at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
 at org.openqa.selenium.interactions.Actions.perform(Actions.java:554)
-at baseClass.org.BaseClass.mouseActionClick(BaseClass.java:162)
-at org.Recircle.page.po_creation.poRegistration(po_creation.java:91)
-at org.recircle.test.PurchaseOrderCreation.resgistration(PurchaseOrderCreation.java:59)
+at baseClass.org.BaseClass.mouseActionClick(BaseClass.java:165)
+at org.Recircle.page.cp_registration.primary_Userdetails_form(cp_registration.java:100)
+at org.recircle.test.CP_Registration.CP_PrimaryUser_form(CP_Registration.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,12 +95,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- resgistration -->
-        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@5e2c3d18]" started-at="2023-06-15T15:57:14 IST" name="afterlaunch" finished-at="2023-06-15T15:57:14 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- CP_PrimaryUser_form -->
+        <test-method signature="CP_Org_Details_form()[pri:5, instance:org.recircle.test.CP_Registration@2cb4893b]" started-at="2023-06-16T17:09:16 IST" name="CP_Org_Details_form" finished-at="2023-06-16T17:09:27 IST" duration-ms="10359" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='name'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58401/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d673d75cc98cb649fe97f99acf334fe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id='name'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58401/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d673d75cc98cb649fe97f99acf334fe
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at baseClass.org.BaseClass.inputText(BaseClass.java:73)
+at org.Recircle.page.cp_registration.Org_Details_form(cp_registration.java:138)
+at org.recircle.test.CP_Registration.CP_Org_Details_form(CP_Registration.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CP_Org_Details_form -->
+        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.CP_Registration@2cb4893b]" started-at="2023-06-16T17:09:27 IST" name="afterlaunch" finished-at="2023-06-16T17:09:27 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlaunch -->
-      </class> <!-- org.recircle.test.PurchaseOrderCreation -->
+      </class> <!-- org.recircle.test.CP_Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

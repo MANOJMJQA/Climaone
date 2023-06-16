@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\manoj\AppData\Local\Temp\testng-eclipse-1926781466\testng-customsuite.xml</span>
+                    <span>C:\Users\Gunaal Zaigo\AppData\Local\Temp\testng-eclipse--1107899488\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.PurchaseOrderCreation" class="method navigator-link" hash-for-method="resgistration">resgistration</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.CP_Registration" class="method navigator-link" hash-for-method="CP_Org_Details_form">CP_Org_Details_form</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.CP_Registration" class="method navigator-link" hash-for-method="CP_PrimaryUser_form">CP_PrimaryUser_form</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,17 +122,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.PurchaseOrderCreation" class="method navigator-link" hash-for-method="AddPo">AddPo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.CP_Registration" class="method navigator-link" hash-for-method="Add_CP_form">Add_CP_form</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.PurchaseOrderCreation" class="method navigator-link" hash-for-method="ClickPo">ClickPo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.CP_Registration" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.PurchaseOrderCreation" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.recircle.test.CP_Registration" class="method navigator-link" hash-for-method="cp_modulepage">cp_modulepage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -145,22 +150,70 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">org.recircle.test.PurchaseOrderCreation</span>
+              <span class="class-name">org.recircle.test.CP_Registration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="resgistration">
-                  </a> <!-- resgistration -->
-                  <span class="method-name">resgistration</span>
-                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
-  (Session info: chrome=114.0.5735.110)
+                  <a name="CP_Org_Details_form">
+                  </a> <!-- CP_Org_Details_form -->
+                  <span class="method-name">CP_Org_Details_form</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;name&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8cf6afad5056ed398f810381b29357a7, actions {actions=[org.openqa.selenium.interactions.Sequence@11f9535b]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\manoj\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60394}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60394/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8cf6afad5056ed398f810381b29357a7
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58401/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d673d75cc98cb649fe97f99acf334fe
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at baseClass.org.BaseClass.inputText(BaseClass.java:73)
+	at org.Recircle.page.cp_registration.Org_Details_form(cp_registration.java:138)
+	at org.recircle.test.CP_Registration.CP_Org_Details_form(CP_Registration.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CP_PrimaryUser_form">
+                  </a> <!-- CP_PrimaryUser_form -->
+                  <span class="method-name">CP_PrimaryUser_form</span>
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=113.0.5672.129)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1d673d75cc98cb649fe97f99acf334fe, actions {actions=[org.openqa.selenium.interactions.Sequence@380e1909]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.129, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\GUNAAL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58401/devtoo..., se:cdpVersion: 113.0.5672.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1d673d75cc98cb649fe97f99acf334fe
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -176,9 +229,9 @@ Session ID: 8cf6afad5056ed398f810381b29357a7
 	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:603)
 	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:585)
 	at org.openqa.selenium.interactions.Actions.perform(Actions.java:554)
-	at baseClass.org.BaseClass.mouseActionClick(BaseClass.java:162)
-	at org.Recircle.page.po_creation.poRegistration(po_creation.java:91)
-	at org.recircle.test.PurchaseOrderCreation.resgistration(PurchaseOrderCreation.java:59)
+	at baseClass.org.BaseClass.mouseActionClick(BaseClass.java:165)
+	at org.Recircle.page.cp_registration.primary_Userdetails_form(cp_registration.java:100)
+	at org.recircle.test.CP_Registration.CP_PrimaryUser_form(CP_Registration.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -216,21 +269,14 @@ Session ID: 8cf6afad5056ed398f810381b29357a7
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.recircle.test.PurchaseOrderCreation</span>
+              <span class="class-name">org.recircle.test.CP_Registration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddPo">
-                  </a> <!-- AddPo -->
-                  <span class="method-name">AddPo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ClickPo">
-                  </a> <!-- ClickPo -->
-                  <span class="method-name">ClickPo</span>
+                  <a name="Add_CP_form">
+                  </a> <!-- Add_CP_form -->
+                  <span class="method-name">Add_CP_form</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -240,12 +286,19 @@ Session ID: 8cf6afad5056ed398f810381b29357a7
                   <span class="method-name">Login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cp_modulepage">
+                  </a> <!-- cp_modulepage -->
+                  <span class="method-name">cp_modulepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\manoj\AppData\Local\Temp\testng-eclipse-1926781466\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Gunaal Zaigo\AppData\Local\Temp\testng-eclipse--1107899488\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -254,7 +307,7 @@ Session ID: 8cf6afad5056ed398f810381b29357a7
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.recircle.test.PurchaseOrderCreation&quot;/&gt;
+      &lt;class name=&quot;org.recircle.test.CP_Registration&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -294,28 +347,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'org.recircle.test.PurchaseOrderCreation')
-data.setCell(0, 3, 14504);
+data.setCell(0, 2, 'org.recircle.test.CP_Registration')
+data.setCell(0, 3, 17451);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ClickPo')
-data.setCell(1, 2, 'org.recircle.test.PurchaseOrderCreation')
-data.setCell(1, 3, 7647);
+data.setCell(1, 1, 'CP_Org_Details_form')
+data.setCell(1, 2, 'org.recircle.test.CP_Registration')
+data.setCell(1, 3, 10359);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'resgistration')
-data.setCell(2, 2, 'org.recircle.test.PurchaseOrderCreation')
-data.setCell(2, 3, 2004);
+data.setCell(2, 1, 'Add_CP_form')
+data.setCell(2, 2, 'org.recircle.test.CP_Registration')
+data.setCell(2, 3, 6101);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AddPo')
-data.setCell(3, 2, 'org.recircle.test.PurchaseOrderCreation')
-data.setCell(3, 3, 1662);
+data.setCell(3, 1, 'cp_modulepage')
+data.setCell(3, 2, 'org.recircle.test.CP_Registration')
+data.setCell(3, 3, 1126);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CP_PrimaryUser_form')
+data.setCell(4, 2, 'org.recircle.test.CP_Registration')
+data.setCell(4, 3, 675);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -341,32 +398,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.recircle.test.PurchaseOrderCreation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.recircle.test.CP_Registration</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforelaunch</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">2428 ms</span>
+                <span class="method-start">2489 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">AddPo</span>
-                <span class="method-start">16938 ms</span>
+                <span class="method-name">cp_modulepage</span>
+                <span class="method-start">19945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">ClickPo</span>
-                <span class="method-start">18602 ms</span>
+                <span class="method-name">Add_CP_form</span>
+                <span class="method-start">21074 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">resgistration</span>
-                <span class="method-start">26251 ms</span>
+                <span class="method-name">CP_PrimaryUser_form</span>
+                <span class="method-start">27179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CP_Org_Details_form</span>
+                <span class="method-start">27857 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterlaunch</span>
-                <span class="method-start">28259 ms</span>
+                <span class="method-start">38218 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

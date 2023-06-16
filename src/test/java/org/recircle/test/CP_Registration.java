@@ -33,29 +33,35 @@ public class CP_Registration extends BaseClass {
 		Admin_Login login = PageFactory.initElements(driver, Admin_Login.class);
 		String login2 = login.Login();
 		System.out.println(login2);
-
 	}
-	
 
 	@Test(priority = 2)
-	private void cp_modulepage() {
+	public void cp_modulepage() {
 		cp_registration CP_module = PageFactory.initElements(driver, cp_registration.class);
 		String modulepage = CP_module.modulepage();
 		System.out.println(modulepage);
 	}
 
 	@Test(priority = 3)
-	private void Add_CP_form() {
+	public void Add_CP_form() {
 		cp_registration Add_CP_form = PageFactory.initElements(driver, cp_registration.class);
 		String addCP_form_page = Add_CP_form.addCP_form_page();
 		System.out.println(addCP_form_page);
 	}
 
 	@Test(priority = 4)
-	private void CP_PrimaryUser_form() throws AWTException, InterruptedException {
+	public void CP_PrimaryUser_form() throws AWTException, InterruptedException {
 		cp_registration PrimaryUser = PageFactory.initElements(driver, cp_registration.class);
 		String primary_Userdetails_form = PrimaryUser.primary_Userdetails_form();
 		System.out.println(primary_Userdetails_form);
+	}
+	
+	@Test(priority = 5)
+	public void CP_Org_Details_form() throws InterruptedException, AWTException {
+		cp_registration Org_user = PageFactory.initElements(driver, cp_registration.class);
+		String org_Details_form = Org_user.Org_Details_form();
+		System.out.println(org_Details_form);
+		
 
 	}
 }
