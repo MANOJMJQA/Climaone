@@ -49,7 +49,7 @@ public class Admin_Login extends BaseClass {
 
 	public String dashboardCheck() {
 
-		String text = this.checkText(dashboard, 10);
+		String text = this.checkText(dashboard, 50);
 		return text;
 
 	}

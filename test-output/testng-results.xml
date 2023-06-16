@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-15T19:37:47 IST" name="Default suite" finished-at="2023-06-15T19:38:10 IST" duration-ms="22302">
+  <suite started-at="2023-06-16T16:55:01 IST" name="Default suite" finished-at="2023-06-16T16:56:53 IST" duration-ms="112586">
     <groups>
     </groups>
-    <test started-at="2023-06-15T19:37:47 IST" name="Default test" finished-at="2023-06-15T19:38:10 IST" duration-ms="22302">
+    <test started-at="2023-06-16T16:55:01 IST" name="Default test" finished-at="2023-06-16T16:56:53 IST" duration-ms="112586">
       <class name="org.recircle.test.PurchaseOrderCreation">
-        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:37:47 IST" name="beforelaunch" finished-at="2023-06-15T19:37:50 IST" duration-ms="2452" status="PASS">
+        <test-method is-config="true" signature="beforelaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-16T16:55:01 IST" name="beforelaunch" finished-at="2023-06-16T16:55:03 IST" duration-ms="2410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforelaunch -->
-        <test-method signature="Login()[pri:1, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:37:50 IST" name="Login" finished-at="2023-06-15T19:38:00 IST" duration-ms="9706" status="PASS">
+        <test-method signature="Login()[pri:1, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-16T16:55:03 IST" name="Login" finished-at="2023-06-16T16:55:14 IST" duration-ms="11126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="AddPo()[pri:2, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:00 IST" name="AddPo" finished-at="2023-06-15T19:38:01 IST" duration-ms="1014" status="PASS">
+        <test-method signature="AddPo()[pri:2, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-16T16:55:14 IST" name="AddPo" finished-at="2023-06-16T16:55:15 IST" duration-ms="1077" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddPo -->
-        <test-method signature="ClickPo()[pri:3, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:01 IST" name="ClickPo" finished-at="2023-06-15T19:38:03 IST" duration-ms="2716" status="PASS">
+        <test-method signature="ClickPo()[pri:3, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-16T16:55:15 IST" name="ClickPo" finished-at="2023-06-16T16:55:18 IST" duration-ms="3219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickPo -->
-        <test-method signature="resgistration()[pri:4, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:03 IST" name="resgistration" finished-at="2023-06-15T19:38:09 IST" duration-ms="6097" status="PASS">
+        <test-method signature="resgistration()[pri:4, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-16T16:55:18 IST" name="resgistration" finished-at="2023-06-16T16:56:53 IST" duration-ms="94688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resgistration -->
-        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@54a7079e]" started-at="2023-06-15T19:38:09 IST" name="afterlaunch" finished-at="2023-06-15T19:38:10 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="afterlaunch()[pri:0, instance:org.recircle.test.PurchaseOrderCreation@57a78e3]" started-at="2023-06-16T16:56:53 IST" name="afterlaunch" finished-at="2023-06-16T16:56:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterlaunch -->
