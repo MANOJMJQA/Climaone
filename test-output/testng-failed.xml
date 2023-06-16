@@ -5,9 +5,9 @@
     <classes>
       <class name="org.recircle.test.PurchaseOrderCreation">
         <methods>
+          <include name="resgistration"/>
           <include name="afterlaunch"/>
           <include name="beforelaunch"/>
-          <include name="Login"/>
         </methods>
       </class> <!-- org.recircle.test.PurchaseOrderCreation -->
     </classes>

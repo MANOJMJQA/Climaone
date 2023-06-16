@@ -25,6 +25,7 @@ public class po_creation extends BaseClass {
 	By AddPO = By.xpath("//div[@id='main-container']//div[1]//div[3]//div[1]//div[2]//button");
 	By AddpoText = By.xpath("//div[@id='main-container']//div[2]//div[1]//div[1]//div[1]//h2");
 	By CompanyNext = By.xpath("//input[@id='company_details_next']");
+	By Spinner = By.xpath("//*[@id='recircle-loader' and contains(@class,'d-none')]");
 
 //From Field Filling
 
@@ -64,6 +65,20 @@ public class po_creation extends BaseClass {
 	By Rate_Kg = By.id("price");
 	By Save_Line_Item = By.id("savelineitem");
 	By Line_Item_Details = By.xpath("//table[@id='lineItemTable']//tbody//tr//td[1]");
+	By LinePageNext = By.xpath("//input[@id='polineitem_details_next']");
+	By AdditonalDetails = By.xpath("//form[@id='msform']//div[1]//fieldset[3]//h4");
+
+	// Additional details
+	By Notes = By.id("notes");
+	By SupportingDocuments = By.xpath("//div[@id='upload_button_div_2']//span");
+	By SupportingDocumentsCheck = By.xpath("//span[@id='supporting_file_filename']");
+	By adddtionalDetailsNext = By.id("add_details_next");
+
+	// Review page
+	By AddPurchaseOrder = By.id("add_purchase_order_submit");
+    By PopUpTextCheck = By.xpath("//h2[@id='popup_po_head']");
+    By PopUpButton = By.xpath("//h2[@id='popup_po_head']//parent::div//following::div[1]//input[@value='Purchase Orders']");
+	
 
 	public String addPo() {
 		this.buttonClick(purchaseOrder);
@@ -88,12 +103,12 @@ public class po_creation extends BaseClass {
 
 		this.buttonClick(CompanyName);
 		this.buttonClick(CompanyNameList);
-		this.inputText(CertificateName, "Automation");
+		this.inputText(CertificateName, "FUllRUN");
 		this.inputText(GSTIN, "24AABCU9603R1ZT");
 		this.inputText(BrandPoNumber, BrandNumber);
 		this.inputText(StartDate, "12/05/2023");
 		this.inputText(EndDate, "24/05/2023");
-		this.inputText(ContactPerson, "ManojAUT");
+		this.inputText(ContactPerson, "MjAutomation");
 		this.inputText(ContactNumber, "9876543210");
 //        this.inputText(VendorCode, "8787");
 //        this.inputText(Billto, "cxxxxxx");
@@ -132,15 +147,15 @@ public class po_creation extends BaseClass {
 		}
 	}
 
-	public void lineItemAdd() {
+	public void lineItemAdd() throws AWTException, InterruptedException {
 		this.inputText(Line_Number, BrandNumber);
 		this.inputText(State, "Tamil Nadu");
-		this.inputText(City, "Chennai");
+		this.inputText(City, "Any");
 		this.dropdown(10, Material_Type, 1);
 		this.dropdown(10, Material_Category, 1);
 		this.dropdown(10, Material_Sub_Type, 1);
-		this.inputText(Quantity, "20");
-		this.inputText(Rate_Kg, "10");
+		this.inputText(Quantity, "100000");
+		this.inputText(Rate_Kg, "1.2");
 		this.mouseActionClick(Save_Line_Item, 10);
 		if (!this.conditionCheck(Line_Item_Details, 20)) {
 			do {
@@ -148,6 +163,55 @@ public class po_creation extends BaseClass {
 			} while (!this.conditionCheck(Line_Item_Details, 20));
 
 		}
+		this.scrollDown1(200);
+		this.mouseActionClick(LinePageNext, 10);
+		if (!this.conditionCheck(AdditonalDetails, 20)) {
+			do {
+				this.mouseActionClick(LinePageNext, 10);
+
+			} while (!this.conditionCheck(AdditonalDetails, 20));
+
+		}
+
+	}
+
+	public void addtionalDetails() throws InterruptedException, AWTException {
+
+		this.inputText(Notes, "testingAutomation");
+		this.scrollDown1(15);
+		Thread.sleep(1500);
+		this.mouseActionClick(SupportingDocuments, 10);
+		Thread.sleep(1500);
+		this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\Manoj QA.pdf");
+
+		if (!this.conditionCheck(SupportingDocumentsCheck, 10)) {
+			do {
+				this.mouseActionClick(SupportingDocuments, 10);
+				Thread.sleep(2000);
+				this.attachmentFile(System.getProperty("user.dir") + "\\Attachment_files\\Manoj QA.pdf");
+
+			} while (!this.conditionCheck(SupportingDocumentsCheck, 10));
+
+		}
+		this.buttonClick(adddtionalDetailsNext);
+
+	}
+
+	public void Review() throws AWTException, InterruptedException {
+		this.conditionCheck(Spinner, 20);
+		this.scrollDown1(1000);
+		this.mouseActionClick(AddPurchaseOrder, 10);
+
+	}
+	
+	public String PopupText() {
+		String checkText = this.checkText(PopUpTextCheck, 10);
+		return checkText;
+
+	}
+	
+	public void PopupButtonClick() {
+		this.buttonClick(PopUpButton);
 
 	}
 

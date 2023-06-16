@@ -58,7 +58,14 @@ public class PurchaseOrderCreation extends BaseClass {
 		po_creation regis = PageFactory.initElements(driver, po_creation.class);
 		regis.companyDetailsForm();
 		regis.lineItemAdd();
+		regis.addtionalDetails();
+		regis.Review();
+		String popupText = regis.PopupText();
+		System.out.println(popupText);
+		regis.PopupButtonClick();
 
 	}
+	 
+	
 
 }
